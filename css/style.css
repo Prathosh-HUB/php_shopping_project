@@ -1,0 +1,79 @@
+/* Reset base styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container for the form */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Section heading */
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007BFF;
+}
+
+/* Form layout */
+.add_product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input fields */
+.input_fields {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s border ease;
+}
+
+.input_fields:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Submit button */
+.submit_btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit_btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .input_fields, .submit_btn {
+        font-size: 14px;
+    }
+}
